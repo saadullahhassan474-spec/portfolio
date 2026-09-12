@@ -428,3 +428,6 @@ html { scroll-behavior: smooth; }
 
 .desktop-nav a.is-active { color: var(--primary); }
 .mobile-nav a.is-active { color: var(--primary); }
+.mobile-nav[hidden] {
+  display: none !important;
+}

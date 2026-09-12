@@ -10,11 +10,27 @@ menuButton.addEventListener("click", () => {
 });
 
 mobileNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation menu");
-  mobileNav.hidden = true;
-}));
 
+  mobileNav.hidden = true;
+
+  menuButton.innerHTML = `
+    <svg viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true">
+      <path d="M4 6h16"/>
+      <path d="M4 12h16"/>
+      <path d="M4 18h16"/>
+    </svg>
+  `;
+
+}));
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((entries) => {
