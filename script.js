@@ -77,3 +77,57 @@ if ("IntersectionObserver" in window) {
 
   sections.forEach((section) => observer.observe(section));
 })();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".timeline-card");
+
+  const animateCard = (card) => {
+    if (card.dataset.animated) return;
+    card.dataset.animated = "true";
+
+    const badge = card.querySelector("[data-percentage]");
+    if (!badge) return;
+
+    const targetPercentage = parseFloat(badge.dataset.percentage);
+    if (Number.isNaN(targetPercentage)) return;
+
+    let start = null;
+    const duration = 2000;
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      const currentVal = (targetPercentage * easeProgress).toFixed(2);
+
+      card.style.setProperty("--card-percentage", `${currentVal}%`);
+      badge.textContent = `${currentVal}%`;
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        card.style.setProperty("--card-percentage", `${targetPercentage}%`);
+        badge.textContent = `${targetPercentage}%`;
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCard(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach((card) => observer.observe(card));
+  } else {
+    cards.forEach((card) => animateCard(card));
+  }
+});

@@ -3,6 +3,8 @@
 
 :root {
   --radius: 0.5rem;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'DM Mono', monospace;
   --background: oklch(0.13 0.025 255);
   --foreground: oklch(0.96 0.008 245);
   --card: oklch(0.17 0.028 255);
@@ -163,7 +165,42 @@
 .timeline::before { content: ""; position: absolute; left: 1rem; top: 1rem; bottom: 1rem; width: 1px; background: var(--border); }
 .timeline-item { position: relative; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 1rem; padding-bottom: 1.5rem; }
 .timeline-marker { z-index: 1; display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid var(--primary); border-radius: 50%; background: var(--background); color: var(--primary); font-family: var(--font-mono); font-size: .65rem; }
-.timeline-card { display: grid; gap: 1.2rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); padding: 1.35rem; }
+.timeline-card {
+  position: relative;
+  display: grid;
+  gap: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 1.35rem;
+  isolation: isolate;
+  --card-percentage: 0%;
+  transition: transform 0.45s var(--motion-ease), border-color 0.3s ease, box-shadow 0.45s ease;
+}
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--cyan-strong) var(--card-percentage, 0%),
+    rgba(118, 220, 255, 0.08) var(--card-percentage, 0%)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px rgba(70, 220, 255, 0.65));
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+.timeline-card:hover::before {
+  opacity: 1;
+  filter: drop-shadow(0 0 14px rgba(70, 220, 255, 0.95));
+}
 .timeline-card span { color: var(--primary); font-family: var(--font-mono); font-size: .68rem; }
 .timeline-card h3 { margin: .45rem 0; font-size: 1.2rem; }
 .timeline-card p { margin: 0; color: var(--muted-foreground); }
@@ -430,4 +467,51 @@ html { scroll-behavior: smooth; }
 .mobile-nav a.is-active { color: var(--primary); }
 .mobile-nav[hidden] {
   display: none !important;
+}
+
+.education-result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.education-result > strong {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
+
+.percentage-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--cyan-soft);
+  border: 1px solid rgba(118, 220, 255, 0.35);
+  color: var(--cyan-strong);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 0 16px rgba(70, 220, 255, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover .percentage-badge {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px rgba(70, 220, 255, 0.45);
+}
+
+@media (max-width: 700px) {
+  .education-result {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+  .education-result > strong {
+    align-self: flex-start;
+  }
 }

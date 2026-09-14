@@ -5,85 +5,1504 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Saadullah Hassan — Computer Science Student & Aspiring Software Developer">
 <title>Saadullah Hassan — CS Student & Aspiring Software Developer</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header">
-  <nav class="nav-shell" aria-label="Primary navigation">
-    <a class="brand-mark" href="#home" aria-label="Saadullah Hassan — Home"><span>SH</span><span class="brand-name">Saadullah Hassan</span></a>
-    <div class="desktop-nav">
-      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a>
-    </div>
-    <a class="btn btn-default btn-lg desktop-connect" href="#contact">Let's Connect <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-    <button class="btn btn-ghost btn-icon mobile-menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg></button>
-  </nav>
-  <div id="mobile-navigation" class="mobile-nav" hidden>
-    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a>
-    <a class="btn btn-default" href="#contact">Let's Connect</a>
-  </div>
+
+<nav class="nav-shell" aria-label="Primary navigation">
+
+<a class="brand-mark" href="#home" aria-label="Saadullah Hassan — Home">
+<span>SH</span>
+<span class="brand-name">Saadullah Hassan</span>
+</a>
+
+<div class="desktop-nav">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+
+<a class="btn btn-default btn-lg desktop-connect" href="#contact">
+Let's Connect
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 12h14"/>
+<path d="m12 5 7 7-7 7"/>
+</svg>
+</a>
+
+<button
+class="btn btn-ghost btn-icon mobile-menu-button"
+id="menuButton"
+aria-label="Open navigation menu"
+aria-expanded="false"
+aria-controls="mobile-navigation">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M4 6h16"/>
+<path d="M4 12h16"/>
+<path d="M4 18h16"/>
+</svg>
+
+</button>
+
+</nav>
+
+<div id="mobile-navigation" class="mobile-nav" hidden>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+
+<a class="btn btn-default" href="#contact">Let's Connect</a>
+
+</div>
+
 </header>
+
+
 <main id="main-content">
+
+
 <section id="home" class="hero-section">
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="page-shell hero-layout">
-    <div class="hero-copy">
-      <div class="status-pill"><span></span> Currently studying — BS Computer Science</div>
-      <p class="hero-intro">Hello, I'm</p>
-      <h1>Saadullah <span>Hassan</span></h1>
-      <p class="hero-role">Computer Science Student <b>&</b> Aspiring Software Developer</p>
-      <blockquote class="hero-quote"><span>Build Beyond Boundaries,</span><span>Innovate without Limits.</span></blockquote>
-      <p class="hero-description">Computer Science student passionate about software development, Artificial Intelligence, Python, SQL, and modern web technologies. I enjoy learning new technologies and turning ideas into practical projects.</p>
-      <div class="hero-actions">
-        <a class="btn btn-default btn-lg" href="#projects">View My Projects <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-        <a class="btn btn-outline btn-lg" href="#contact">Contact Me</a>
-        <a class="btn btn-ghost btn-lg" href="https://github.com/saadullahhassan474-spec" target="_blank" rel="noreferrer"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3 0 6.8-1.7 6.8-7A5.4 5.4 0 0 0 20 3.8 5 5 0 0 0 19.9 1S18.6.6 15.5 2.7a13.4 13.4 0 0 0-7 0C5.4.6 4.1 1 4.1 1A5 5 0 0 0 4 3.8a5.4 5.4 0 0 0-1.8 3.7c0 5.3 3.5 7 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M9 18c-4.5 2-5-2-7-2"/></svg> GitHub</a>
-      </div>
-      <div class="hero-metrics"><span><strong>03</strong> Projects</span><span><strong>08</strong> Certificates</span><span><strong>5th</strong> Semester</span></div>
-    </div>
-    <div class="hero-visual">
-      <figure class="hero-portrait"><img src="/assets/20260629_125654-IMG_STYLE.jpg" alt="Portrait of Saadullah Hassan" loading="eager"></figure>
-      <div class="code-workspace" aria-label="Developer profile code preview">
-        <div class="workspace-bar"><div class="window-dots"><span></span><span></span><span></span></div><span>developer.ts</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div>
-        <div class="code-body" aria-hidden="true">
-          <span><i>01</i><b>const</b> developer = {</span>
-          <span><i>02</i>&nbsp;&nbsp;name: <em>'Saadullah Hassan'</em>,</span><span><i>03</i>&nbsp;&nbsp;role: <em>'CS Student'</em>,</span><span><i>04</i>&nbsp;&nbsp;focus: [<em>'Software'</em>, <em>'AI'</em>],</span><span><i>05</i>&nbsp;&nbsp;mindset: <em>'always learning'</em>,</span><span><i>06</i>};</span><span class="code-gap"><i>07</i></span><span><i>08</i><b>while</b> (curious) {</span><span><i>09</i>&nbsp;&nbsp;learn(); build(); improve();</span><span><i>10</i>}</span>
-        </div>
-        <div class="workspace-status"><span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.8 10A10 10 0 1 1 17 4.3"/><path d="m9 11 3 3L22 4"/></svg> Ready to build</span><span>Ln 10, Col 2</span></div>
-      </div>
-    </div>
-  </div>
+
+<div class="hero-grid" aria-hidden="true"></div>
+
+<div class="page-shell hero-layout">
+
+<div class="hero-copy">
+
+<div class="status-pill">
+<span></span>
+Currently studying — BS Computer Science
+</div>
+
+<p class="hero-intro">Hello, I'm</p>
+
+<h1>
+Saadullah <span>Hassan</span>
+</h1>
+
+<p class="hero-role">
+Computer Science Student <b>&</b> Aspiring Software Developer
+</p>
+
+<blockquote class="hero-quote">
+<span>Build Beyond Boundaries,</span>
+<span>Innovate without Limits.</span>
+</blockquote>
+
+<p class="hero-description">
+Computer Science student passionate about software development,
+Artificial Intelligence, Python, SQL, and modern web technologies.
+I enjoy learning new technologies and turning ideas into practical projects.
+</p>
+
+<div class="hero-actions">
+
+<a class="btn btn-default btn-lg" href="#projects">
+View My Projects
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M5 12h14"/>
+<path d="m12 5 7 7-7 7"/>
+</svg>
+</a>
+
+<a class="btn btn-outline btn-lg" href="#contact">
+Contact Me
+</a>
+
+<a class="btn btn-ghost btn-lg"
+href="https://github.com/saadullahhassan474-spec"
+target="_blank"
+rel="noreferrer">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3 0 6.8-1.7 6.8-7A5.4 5.4 0 0 0 20 3.8 5 5 0 0 0 19.9 1S18.6.6 15.5 2.7a13 13 0 0 0-7 0C5.4.6 4.1 1 4.1 1A5 5 0 0 0 4 3.8a5.4 5.4 0 0 0-1.8 3.7c0 5.3 3.5 7 6.8 7A4.8 4.8 0 0 0 8 18v4"/>
+<path d="M9 18c-4.5 2-5-2-7-2"/>
+</svg>
+
+GitHub
+
+</a>
+
+</div>
+
+<div class="hero-metrics">
+
+<span>
+<strong>03</strong>
+Projects
+</span>
+
+<span>
+<strong>08</strong>
+Certificates
+</span>
+
+<span>
+<strong>5th</strong>
+Semester
+</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-visual">
+
+<figure class="hero-portrait">
+<img
+src="/assets/20260629_125654-IMG_STYLE.jpg"
+alt="Portrait of Saadullah Hassan"
+loading="eager">
+</figure>
+
+<div class="code-workspace" aria-label="Developer profile code preview">
+
+<div class="workspace-bar">
+
+<div class="window-dots">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<span>developer.ts</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m18 16 4-4-4-4"/>
+<path d="m6 8-4 4 4 4"/>
+<path d="m14.5 4-5 16"/>
+</svg>
+
+</div>
+
+<div class="code-body" aria-hidden="true">
+
+<span><i>01</i><b>const</b> developer = {</span>
+
+<span>
+<i>02</i>&nbsp;&nbsp;name:
+<em>'Saadullah Hassan'</em>,
+</span>
+
+<span>
+<i>03</i>&nbsp;&nbsp;role:
+<em>'CS Student'</em>,
+</span>
+
+<span>
+<i>04</i>&nbsp;&nbsp;focus:
+[<em>'Software'</em>, <em>'AI'</em>],
+</span>
+
+<span>
+<i>05</i>&nbsp;&nbsp;mindset:
+<em>'always learning'</em>,
+</span>
+
+<span><i>06</i>};</span>
+
+<span class="code-gap">
+<i>07</i>
+</span>
+
+<span>
+<i>08</i><b>while</b> (curious) {
+</span>
+
+<span>
+<i>09</i>&nbsp;&nbsp;learn(); build(); improve();
+</span>
+
+<span>
+<i>10</i>}
+</span>
+
+</div>
+
+<div class="workspace-status">
+
+<span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M21.8 10A10 10 0 1 1 17 4.3"/>
+<path d="m9 11 3 3L22 4"/>
+</svg>
+
+Ready to build
+
+</span>
+
+<span>Ln 10, Col 2</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-<section id="about" class="section-block"><div class="page-shell"><div class="section-heading reveal"><span class="section-kicker">01 / Profile</span><h2>About Me</h2></div>
-<div class="about-layout reveal"><div class="about-copy"><p>I am a Computer Science student currently pursuing a BS in Computer Science at The Islamia University of Bahawalpur. I have completed four semesters and am currently continuing my 5th semester.</p><p>My interests include software development, Artificial Intelligence, Python programming, SQL, Web Development, Large Language Models, APIs, and modern AI technologies.</p><p>I enjoy learning through practical projects and experimenting with new technologies. My goal is to grow into a professional Software Developer and contribute to real-world software projects.</p></div>
-<div class="facts-grid"><div class="fact-card"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></svg><span>Education</span><strong>BS Computer Science</strong></div><div class="fact-card"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6Z"/></svg><span>Current Semester</span><strong>5th Semester</strong></div><div class="fact-card"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/><path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/><path d="M12 5v11"/><path d="M8 9h4"/><path d="M12 13h4"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg><span>Focus</span><strong>Software Development &amp; AI</strong></div><div class="fact-card"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Location</span><strong>Punjab, Pakistan</strong></div></div></div></div></section>
-<section id="skills" class="section-block section-tinted"><div class="page-shell"><div class="section-heading reveal"><span class="section-kicker">02 / Capabilities</span><h2>Technical Skills</h2><p>A focused toolkit I use to learn, experiment, and build practical software.</p></div><div class="skills-grid">
-<div class="skill-card reveal"> <div class="card-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></div><h3>Programming Languages</h3><div class="skill-list"><span>Python</span><span>Java</span><span>C++</span><span>SQL</span></div></div>
-<div class="skill-card reveal"> <div class="card-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div><h3>Web Development</h3><div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
-<div class="skill-card reveal"> <div class="card-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/><path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/><path d="M12 5v11"/><path d="M8 9h4"/><path d="M12 13h4"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg></div><h3>Artificial Intelligence &amp; Machine Learning</h3><div class="skill-list"><span>Large Language Models (LLMs)</span><span>OpenAI API</span><span>Embeddings</span><span>Hugging Face</span><span>DeepSeek AI</span></div></div>
-<div class="skill-card reveal"> <div class="card-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></svg></div><h3>Tools &amp; Development</h3><div class="skill-list"><span>Git</span><span>GitHub</span><span>VS Code</span></div></div>
-</div></div></section>
-<section id="projects" class="section-block"><div class="page-shell"><div class="section-heading reveal"><span class="section-kicker">03 / Selected Work</span><h2>Featured Projects</h2><p>Practical projects where curiosity becomes working software.</p></div><div class="projects-stack">
-<article class="project-card reveal"><div class="project-art"><span class="project-number">PROJECT / 01</span><div class="project-visual web-visual"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg><div><span></span><span></span><span></span></div></div></div><div class="project-content"><span class="project-index">01</span><h3>Word Puzzle &amp; Brain Games Hub</h3><p>An interactive web application featuring word puzzles and brain games designed with a responsive and engaging user experience.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-actions"><button class="btn btn-outline btn-sm btn-disabled" disabled>View Project <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></button><a class="btn btn-ghost btn-sm" href="https://github.com/saadullahhassan474-spec" target="_blank" rel="noreferrer">Source Code <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></div><small>Add your project and source links above</small></div></article>
-<article class="project-card reveal"><div class="project-art"><span class="project-number">PROJECT / 02</span><div class="project-visual chat-visual"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"/><path d="M8 8h8"/><path d="M8 12h6"/></svg><span></span><span></span><span></span></div></div><div class="project-content"><span class="project-index">02</span><h3>Personal AI ChatBot — Vibe Coding</h3><p>An AI-powered chatbot project designed for real-time conversations, exploring NLP concepts and conversational AI techniques.</p><div class="tag-list"><span>AI</span><span>NLP</span><span>Conversational AI</span></div><div class="project-actions"><button class="btn btn-outline btn-sm btn-disabled" disabled>View Project <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></button><a class="btn btn-ghost btn-sm" href="https://github.com/saadullahhassan474-spec" target="_blank" rel="noreferrer">Source Code <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></div><small>Add your project and source links above</small></div></article>
-<article class="project-card reveal"><div class="project-art"><span class="project-number">PROJECT / 03</span><div class="project-visual analysis-visual"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/><path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/><path d="M12 5v11"/><path d="M8 9h4"/><path d="M12 13h4"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg><div><span></span><span></span><span></span></div></div></div><div class="project-content"><span class="project-index">03</span><h3>Hugging Face Sentiment Analysis WebApp</h3><p>A sentiment analysis web application using Hugging Face models to classify text into positive, negative, and neutral sentiment.</p><div class="tag-list"><span>Python</span><span>Hugging Face</span><span>AI / NLP</span></div><div class="project-actions"><button class="btn btn-outline btn-sm btn-disabled" disabled>View Project <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="True"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></button><a class="btn btn-ghost btn-sm" href="https://github.com/saadullahhassan474-spec" target="_blank" rel="noreferrer">Source Code <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></div><small>Add your project and source links above</small></div></article>
-</div></div></section>
-<section id="certifications" class="section-block section-tinted"><div class="page-shell"><div class="section-heading reveal"><span class="section-kicker">04 / Learning</span><h2>Certifications &amp; Courses</h2><p>Completed coursework across programming, data, APIs, and modern AI technologies.</p></div><div class="cert-grid">
-<article class="cert-card reveal"><div class="cert-top"><span>01</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Introduction to Embeddings with the OpenAI API</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/intro-to Embeddings with the OpenAI API.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>02</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Intro to Java</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Intro-to Java.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>03</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Intro to LLMs in Python</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Intro-to LLMs in Python.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>04</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Introduction to Relational Databases in SQL</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Intro-to Relational Databases in SQL.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>05</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Introduction to SQL</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Intro-to SQL.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>06</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Working with DeepSeek in Python</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Working with DeepSeek in Python.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>07</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Working with Hugging Face</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Working with Hugging Face.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article><article class="cert-card reveal"><div class="cert-top"><span>08</span><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><p>DataCamp</p><h3>Working with the OpenAI API</h3></div><a class="btn btn-outline btn-sm" href="assets/certificates/Working with the OpenAi API.pdf" target="_blank" rel="noreferrer">View Certificate <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a><small>Add the matching PDF in assets/certificates</small></article>
-</div></div></section>
-<section id="education" class="section-block"><div class="page-shell narrow-shell"><div class="section-heading reveal"><span class="section-kicker">05 / Academic Journey</span><h2>Education</h2></div><div class="timeline">
-<article class="timeline-item reveal"><div class="timeline-marker"><span>1</span></div><div class="timeline-card"><div><span>2024 – Present</span><h3>BS Computer Science</h3><p>The Islamia University of Bahawalpur</p></div><strong>5th Semester — Currently Continuing</strong></div></article>
-<article class="timeline-item reveal"><div class="timeline-marker"><span>2</span></div><div class="timeline-card"><div><span>2023</span><h3>Intermediate — Pre-Medical</h3><p>BISE DG Khan</p></div><strong>944 / 1200</strong></div></article>
-<article class="timeline-item reveal"><div class="timeline-marker"><span>3</span></div><div class="timeline-card"><div><span>2021</span><h3>Matriculation</h3><p>BISE DG Khan</p></div><strong>987 / 1100</strong></div></article>
-</div></div></section>
-<section class="section-block section-tinted"><div class="page-shell"><div class="achievement-card reveal"><div class="achievement-icon"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div><div><span>Achievement</span><h2>CM Punjab Laptop Scheme — Phase 1</h2><p>Recipient of the CM Punjab Laptop Scheme — Phase 1</p></div><svg class="achievement-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.5 4.5L6 9l4.5 1.5L12 15l1.5-4.5L18 9l-4.5-1.5L12 3Z"/><path d="m19 14-.8 2.2L16 17l2.2.8L19 20l.8-2.2L22 17l-2.2-.8L19 14Z"/><path d="m5 3-.6 1.4L3 5l1.4.6L5 7l.6-1.4L7 5l-1.4-.6L5 3Z"/></svg></div><div class="exploring-wrap"><div class="section-heading reveal"><span class="section-kicker">06 / Forward Motion</span><h2>Currently Exploring</h2></div><div class="exploring-grid">
-<div class="explore-card reveal"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/><path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/><path d="M12 5v11"/><path d="M8 9h4"/><path d="M12 13h4"/><path d="M5 12H2"/><path d="M22 12h-3"/></svg><span>Artificial Intelligence</span></div><div class="explore-card reveal"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg><span>Software Development</span></div><div class="explore-card reveal"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg><span>Web Development</span></div><div class="explore-card reveal"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="12" x="3" y="8" rx="2"/><path d="M12 8V4H8"/><path d="M8 4h.01"/><path d="M16 13h.01"/><path d="M8 13h.01"/><path d="M7 17h10"/></svg><span>Large Language Models</span></div><div class="explore-card reveal"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2Z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6Z"/></svg><span>Continuous Learning</span></div>
-</div><p class="explore-mantra">“Learn. Build. Experiment. Improve.”</p></div></div></section>
-<section class="philosophy-section"><div class="page-shell reveal"><span class="section-kicker">Developer Philosophy</span><blockquote>Learn. Build.<br><span>Experiment. Improve.</span></blockquote><p>“I believe the best way to grow as a developer is to continuously learn, build practical projects, experiment with new technologies, and improve with every project.”</p></div></section>
+
+
+<section id="about" class="section-block">
+
+<div class="page-shell">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">01 / Profile</span>
+
+<h2>About Me</h2>
+
+</div>
+
+<div class="about-layout reveal">
+
+<div class="about-copy">
+
+<p>
+I am a Computer Science student currently pursuing a BS in Computer Science at The Islamia University of Bahawalpur. I have completed four semesters and am currently continuing my 5th semester.
+</p>
+
+<p>
+My interests include software development, Artificial Intelligence, Python programming, SQL, Web Development, Large Language Models, APIs, and modern AI technologies.
+</p>
+
+<p>
+I enjoy learning through practical projects and experimenting with new technologies. My goal is to grow into a professional Software Developer and contribute to real-world software projects.
+</p>
+
+</div>
+
+
+<div class="facts-grid">
+
+<div class="fact-card">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M22 10 12 5 2 10l10 5 10-5Z"/>
+<path d="M6 12v5c3 2 9 2 12 0v-5"/>
+<path d="M22 10v6"/>
+</svg>
+
+<span>Education</span>
+<strong>BS Computer Science</strong>
+
+</div>
+
+
+<div class="fact-card">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2Z"/>
+<path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6Z"/>
+</svg>
+
+<span>Current Semester</span>
+<strong>5th Semester</strong>
+
+</div>
+
+
+<div class="fact-card">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/>
+<path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/>
+<path d="M12 5v11"/>
+<path d="M8 9h4"/>
+<path d="M12 13h4"/>
+<path d="M5 12H2"/>
+<path d="M22 12h-3"/>
+</svg>
+
+<span>Focus</span>
+<strong>Software Development &amp; AI</strong>
+
+</div>
+
+
+<div class="fact-card">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+
+<span>Location</span>
+<strong>Punjab, Pakistan</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills" class="section-block section-tinted">
+
+<div class="page-shell">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">02 / Capabilities</span>
+
+<h2>Technical Skills</h2>
+
+<p>
+A focused toolkit I use to learn, experiment, and build practical software.
+</p>
+
+</div>
+
+
+<div class="skills-grid">
+
+
+<div class="skill-card reveal">
+
+<div class="card-icon">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m18 16 4-4-4-4"/>
+<path d="m6 8-4 4 4 4"/>
+<path d="m14.5 4-5 16"/>
+</svg>
+
+</div>
+
+<h3>Programming Languages</h3>
+
+<div class="skill-list">
+<span>Python</span>
+<span>Java</span>
+<span>C++</span>
+<span>SQL</span>
+</div>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="card-icon">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m12 2 9 5-9 5-9-5 9-5Z"/>
+<path d="m3 12 9 5 9-5"/>
+<path d="m3 17 9 5 9-5"/>
+</svg>
+
+</div>
+
+<h3>Web Development</h3>
+
+<div class="skill-list">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="card-icon">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/>
+<path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/>
+<path d="M12 5v11"/>
+<path d="M8 9h4"/>
+<path d="M12 13h4"/>
+<path d="M5 12H2"/>
+<path d="M22 12h-3"/>
+</svg>
+
+</div>
+
+<h3>Artificial Intelligence &amp; Machine Learning</h3>
+
+<div class="skill-list">
+<span>Large Language Models (LLMs)</span>
+<span>OpenAI API</span>
+<span>Embeddings</span>
+<span>Hugging Face</span>
+<span>DeepSeek AI</span>
+</div>
+
+</div>
+
+
+<div class="skill-card reveal">
+
+<div class="card-icon">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m4 17 6-6-6-6"/>
+<path d="M12 19h8"/>
+</svg>
+
+</div>
+
+<h3>Tools &amp; Development</h3>
+
+<div class="skill-list">
+<span>Git</span>
+<span>GitHub</span>
+<span>VS Code</span>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects" class="section-block">
+
+<div class="page-shell">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">03 / Selected Work</span>
+
+<h2>Featured Projects</h2>
+
+<p>
+Practical projects where curiosity becomes working software.
+</p>
+
+</div>
+
+
+<div class="projects-stack">
+
+
+<article class="project-card reveal">
+
+<div class="project-art">
+
+<span class="project-number">PROJECT / 01</span>
+
+<div class="project-visual web-visual">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m18 16 4-4-4-4"/>
+<path d="m6 8-4 4 4 4"/>
+<path d="m14.5 4-5 16"/>
+</svg>
+
+<div>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="project-content">
+
+<span class="project-index">01</span>
+
+<h3>Word Puzzle &amp; Brain Games Hub</h3>
+
+<p>
+An interactive web application featuring word puzzles and brain games designed with a responsive and engaging user experience.
+</p>
+
+<div class="tag-list">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+
+<div class="project-actions">
+
+<a class="btn btn-outline btn-sm" href="#" target="_blank" rel="noreferrer">
+View Project
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+</a>
+
+<a class="btn btn-ghost btn-sm"
+href="https://github.com/saadullahhassan474-spec"
+target="_blank"
+rel="noreferrer">
+
+Source Code
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+</div>
+
+<small>Add your project and source links above</small>
+
+</div>
+
+</article>
+
+
+<article class="project-card reveal">
+
+<div class="project-art">
+
+<span class="project-number">PROJECT / 02</span>
+
+<div class="project-visual chat-visual">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"/>
+<path d="M8 8h8"/>
+<path d="M8 12h6"/>
+</svg>
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</div>
+
+
+<div class="project-content">
+
+<span class="project-index">02</span>
+
+<h3>Personal AI ChatBot — Vibe Coding</h3>
+
+<p>
+An AI-powered chatbot project designed for real-time conversations, exploring NLP concepts and conversational AI techniques.
+</p>
+
+<div class="tag-list">
+<span>AI</span>
+<span>NLP</span>
+<span>Conversational AI</span>
+</div>
+
+
+<div class="project-actions">
+
+<a class="btn btn-outline btn-sm" href="#" target="_blank" rel="noreferrer">
+View Project
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+</a>
+
+<a class="btn btn-ghost btn-sm"
+href="https://github.com/saadullahhassan474-spec"
+target="_blank"
+rel="noreferrer">
+
+Source Code
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+</div>
+
+<small>Add your project and source links above</small>
+
+</div>
+
+</article>
+
+
+<article class="project-card reveal">
+
+<div class="project-art">
+
+<span class="project-number">PROJECT / 03</span>
+
+<div class="project-visual analysis-visual">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/>
+<path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/>
+<path d="M12 5v11"/>
+<path d="M8 9h4"/>
+<path d="M12 13h4"/>
+<path d="M5 12H2"/>
+<path d="M22 12h-3"/>
+</svg>
+
+<div>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="project-content">
+
+<span class="project-index">03</span>
+
+<h3>Hugging Face Sentiment Analysis WebApp</h3>
+
+<p>
+A sentiment analysis web application using Hugging Face models to classify text into positive, negative, and neutral sentiment.
+</p>
+
+<div class="tag-list">
+<span>Python</span>
+<span>Hugging Face</span>
+<span>AI / NLP</span>
+</div>
+
+
+<div class="project-actions">
+
+<a class="btn btn-outline btn-sm" href="#" target="_blank" rel="noreferrer">
+View Project
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+</a>
+
+<a class="btn btn-ghost btn-sm"
+href="https://github.com/saadullahhassan474-spec"
+target="_blank"
+rel="noreferrer">
+
+Source Code
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+</div>
+
+<small>Add your project and source links above</small>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="certifications" class="section-block section-tinted">
+
+<div class="page-shell">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">04 / Learning</span>
+
+<h2>Certifications &amp; Courses</h2>
+
+<p>
+Completed coursework across programming, data, APIs, and modern AI technologies.
+</p>
+
+</div>
+
+
+<div class="cert-grid">
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>01</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Introduction to Embeddings with the OpenAI API</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/intro-to Embeddings with the OpenAI API.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>02</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Intro to Java</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Intro-to Java.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>03</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Intro to LLMs in Python</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Intro-to LLMs in Python.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>04</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Introduction to Relational Databases in SQL</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Intro-to Relational Databases in SQL.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>05</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Introduction to SQL</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Intro-to SQL.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>06</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Working with DeepSeek in Python</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Working with DeepSeek in Python.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>07</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Working with Hugging Face</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Working with Hugging Face.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+<article class="cert-card reveal">
+
+<div class="cert-top">
+<span>08</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+<p>DataCamp</p>
+<h3>Working with the OpenAI API</h3>
+</div>
+
+<a class="btn btn-outline btn-sm"
+href="assets/certificates/Working with the OpenAi API.pdf"
+target="_blank"
+rel="noreferrer">
+
+View Certificate
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 3h6v6"/>
+<path d="M10 14 21 3"/>
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+</svg>
+
+</a>
+
+<small>Add the matching PDF in assets/certificates</small>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education" class="section-block">
+
+<div class="page-shell narrow-shell">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">05 / Academic Journey</span>
+
+<h2>Education</h2>
+
+</div>
+
+
+<div class="timeline">
+
+
+<article class="timeline-item reveal">
+
+<div class="timeline-marker">
+<span>1</span>
+</div>
+
+<div class="timeline-card">
+
+<div>
+
+<span>2024 – Present</span>
+
+<h3>BS Computer Science</h3>
+
+<p>
+The Islamia University of Bahawalpur
+</p>
+
+</div>
+
+
+<div class="education-result">
+
+<strong>5th Semester — Currently Continuing</strong>
+
+<span class="percentage-badge" data-percentage="62.5">62.5%</span>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article class="timeline-item reveal">
+
+<div class="timeline-marker">
+<span>2</span>
+</div>
+
+<div class="timeline-card">
+
+<div>
+
+<span>2023</span>
+
+<h3>Intermediate — Pre-Medical</h3>
+
+<p>
+BISE DG Khan
+</p>
+
+</div>
+
+
+<div class="education-result">
+
+<strong>944 / 1200</strong>
+
+<span class="percentage-badge" data-percentage="78.67">78.67%</span>
+
+</div>
+
+</div>
+
+</article>
+
+
+<article class="timeline-item reveal">
+
+<div class="timeline-marker">
+<span>3</span>
+</div>
+
+<div class="timeline-card">
+
+<div>
+
+<span>2021</span>
+
+<h3>Matriculation</h3>
+
+<p>
+BISE DG Khan
+</p>
+
+</div>
+
+
+<div class="education-result">
+
+<strong>987 / 1100</strong>
+
+<span class="percentage-badge" data-percentage="89.73">89.73%</span>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section-block section-tinted">
+
+<div class="page-shell">
+
+<div class="achievement-card reveal">
+
+<div class="achievement-icon">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<circle cx="12" cy="8" r="6"/>
+<path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/>
+</svg>
+
+</div>
+
+<div>
+
+<span>Achievement</span>
+
+<h2>CM Punjab Laptop Scheme — Phase 1</h2>
+
+<p>
+Recipient of the CM Punjab Laptop Scheme — Phase 1
+</p>
+
+</div>
+
+
+<svg class="achievement-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m12 3-1.5 4.5L6 9l4.5 1.5L12 15l1.5-4.5L18 9l-4.5-1.5L12 3Z"/>
+<path d="m19 14-.8 2.2L16 17l2.2.8L19 20l.8-2.2L22 17l-2.2-.8L19 14Z"/>
+<path d="m5 3-.6 1.4L3 5l1.4.6L5 7l.6-1.4L7 5l-1.4-.6L5 3Z"/>
+</svg>
+
+</div>
+
+
+<div class="exploring-wrap">
+
+<div class="section-heading reveal">
+
+<span class="section-kicker">06 / Forward Motion</span>
+
+<h2>Currently Exploring</h2>
+
+</div>
+
+
+<div class="exploring-grid">
+
+
+<div class="explore-card reveal">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M12 5a3 3 0 1 0-5.9.8A3 3 0 0 0 4 8.6a3 3 0 0 0 1 5.7 3 3 0 0 0 2.9 3.7A3 3 0 0 0 12 16"/>
+<path d="M12 5a3 3 0 1 1 5.9.8A3 3 0 0 1 20 8.6a3 3 0 0 1-1 5.7 3 3 0 0 1-2.9 3.7A3 3 0 0 1 12 16"/>
+<path d="M12 5v11"/>
+<path d="M8 9h4"/>
+<path d="M12 13h4"/>
+<path d="M5 12H2"/>
+<path d="M22 12h-3"/>
+</svg>
+
+<span>Artificial Intelligence</span>
+
+</div>
+
+
+<div class="explore-card reveal">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m18 16 4-4-4-4"/>
+<path d="m6 8-4 4 4 4"/>
+<path d="m14.5 4-5 16"/>
+</svg>
+
+<span>Software Development</span>
+
+</div>
+
+
+<div class="explore-card reveal">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="m12 2 9 5-9 5-9-5 9-5Z"/>
+<path d="m3 12 9 5 9-5"/>
+<path d="m3 17 9 5 9-5"/>
+</svg>
+
+<span>Web Development</span>
+
+</div>
+
+
+<div class="explore-card reveal">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect width="18" height="12" x="3" y="8" rx="2"/>
+<path d="M12 8V4H8"/>
+<path d="M8 4h.01"/>
+<path d="M16 13h.01"/>
+<path d="M8 13h.01"/>
+<path d="M7 17h10"/>
+</svg>
+
+<span>Large Language Models</span>
+
+</div>
+
+
+<div class="explore-card reveal">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M2 3h6a4 4 0 0 1 4 4v14a4 4 0 0 0-4-4H2Z"/>
+<path d="M22 3h-6a4 4 0 0 0-4 4v14a4 4 0 0 1 4-4h6Z"/>
+</svg>
+
+<span>Continuous Learning</span>
+
+</div>
+
+
+</div>
+
+<p class="explore-mantra">
+“Learn. Build. Experiment. Improve.”
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="philosophy-section">
+
+<div class="page-shell reveal">
+
+<span class="section-kicker">
+Developer Philosophy
+</span>
+
+<blockquote>
+Learn. Build.<br>
+<span>Experiment. Improve.</span>
+</blockquote>
+
+<p>
+“I believe the best way to grow as a developer is to continuously learn, build practical projects, experiment with new technologies, and improve with every project.”
+</p>
+
+</div>
+
+</section>
+
+
 </main>
-<footer id="contact"><div class="page-shell footer-main"><div class="footer-brand"><a class="brand-mark" href="#home"><span>SH</span><span class="brand-name">Saadullah Hassan</span></a><p>Computer Science Student &amp; Aspiring Software Developer</p></div><div class="footer-links"><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#education">Education</a></div><div class="footer-contact"><h3>Get in Touch</h3><a href="mailto:saadullahhassan474@gmail.com"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/></svg><span><small>Email</small>saadullahhassan474@gmail.com</span></a><a href="https://github.com/saadullahhassan474-spec" target="_blank" rel="noreferrer"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3 0 6.8-1.7 6.8-7A5.4 5.4 0 0 0 20 3.8 5 5 0 0 0 19.9 1S18.6.6 15.5 2.7a13.4 13.4 0 0 0-7 0C5.4.6 4.1 1 4.1 1A5 5 0 0 0 4 3.8a5.4 5.4 0 0 0-1.8 3.7c0 5.3 3.5 7 6.8 7A4.8 4.8 0 0 0 8 18v4"/><path d="M9 18c-4.5 2-5-2-7-2"/></svg><span><small>GitHub</small>saadullahhassan474-spec</span></a><a href="https://instagram.com/saad.ullah81" target="_blank" rel="noreferrer"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg><span><small>Instagram</small>@saad.ullah81</span></a><a href="https://www.linkedin.com/in/saadullah-hassan-9991223a6" target="_blank" rel="noreferrer"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect width="4" height="12" x="2" y="9" rx="1"/><circle cx="4" cy="4" r="2"/></svg><span><small>LinkedIn</small>Saadullah Hassan</span></a><div class="contact-line"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><small>Location</small>Punjab, Pakistan</span></div></div></div><div class="page-shell footer-bottom"><span>© 2026 Saadullah Hassan. All rights reserved.</span><span>Built with passion for technology.</span></div></footer>
+
+
+<footer id="contact">
+
+<div class="page-shell footer-main">
+
+
+<div class="footer-brand">
+
+<a class="brand-mark" href="#home">
+
+<span>SH</span>
+
+<span class="brand-name">
+Saadullah Hassan
+</span>
+
+</a>
+
+<p>
+Computer Science Student &amp; Aspiring Software Developer
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h3>Quick Links</h3>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#education">Education</a>
+
+</div>
+
+
+<div class="footer-contact">
+
+<h3>Get in Touch</h3>
+
+
+<a href="mailto:saadullahhassan474@gmail.com">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect width="20" height="16" x="2" y="4" rx="2"/>
+<path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"/>
+</svg>
+
+<span>
+<small>Email</small>
+saadullahhassan474@gmail.com
+</span>
+
+</a>
+
+
+<a href="https://github.com/saadullahhassan474-spec"
+target="_blank"
+rel="noreferrer">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3 0 6.8-1.7 6.8-7A5.4 5.4 0 0 0 20 3.8 5 5 0 0 0 19.9 1S18.6.6 15.5 2.7a13 13 0 0 0-7 0C5.4.6 4.1 1 4.1 1A5 5 0 0 0 4 3.8a5.4 5.4 0 0 0-1.8 3.7c0 5.3 3.5 7 6.8 7A4.8 4.8 0 0 0 8 18v4"/>
+<path d="M9 18c-4.5 2-5-2-7-2"/>
+</svg>
+
+<span>
+<small>GitHub</small>
+saadullahhassan474-spec
+</span>
+
+</a>
+
+
+<a href="https://instagram.com/saad.ullah81"
+target="_blank"
+rel="noreferrer">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+<line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+</svg>
+
+<span>
+<small>Instagram</small>
+@saad.ullah81
+</span>
+
+</a>
+
+
+<a href="https://www.linkedin.com/in/saadullah-hassan-9991223a6"
+target="_blank"
+rel="noreferrer">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/>
+<rect width="4" height="12" x="2" y="9" rx="1"/>
+<circle cx="4" cy="4" r="2"/>
+</svg>
+
+<span>
+<small>LinkedIn</small>
+Saadullah Hassan
+</span>
+
+</a>
+
+
+<div class="contact-line">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+
+<span>
+<small>Location</small>
+Punjab, Pakistan
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="page-shell footer-bottom">
+
+<span>
+© 2026 Saadullah Hassan. All rights reserved.
+</span>
+
+<span>
+Built with passion for technology.
+</span>
+
+</div>
+
+</footer>
+
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+</html>
