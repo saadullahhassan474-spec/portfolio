@@ -131,3 +131,64 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card) => animateCard(card));
   }
 });
+
+(() => {
+  const portrait = document.querySelector(".hero-portrait");
+  if (!portrait) return;
+
+  let animId = null;
+  let currX = 50;
+  let currY = 50;
+  let currRx = 0;
+  let currRy = 0;
+  let targetX = 50;
+  let targetY = 50;
+  let targetRx = 0;
+  let targetRy = 0;
+
+  const render = () => {
+    currX += (targetX - currX) * 0.16;
+    currY += (targetY - currY) * 0.16;
+    currRx += (targetRx - currRx) * 0.14;
+    currRy += (targetRy - currRy) * 0.14;
+
+    portrait.style.setProperty("--reveal-x", `${currX.toFixed(2)}%`);
+    portrait.style.setProperty("--reveal-y", `${currY.toFixed(2)}%`);
+    portrait.style.setProperty("--reveal-radius-x", `${currRx.toFixed(1)}px`);
+    portrait.style.setProperty("--reveal-radius-y", `${currRy.toFixed(1)}px`);
+
+    if (
+      Math.abs(targetRx - currRx) > 0.1 ||
+      Math.abs(targetRy - currRy) > 0.1 ||
+      Math.abs(targetX - currX) > 0.1 ||
+      Math.abs(targetY - currY) > 0.1
+    ) {
+      animId = requestAnimationFrame(render);
+    } else {
+      portrait.style.setProperty("--reveal-radius-x", `${targetRx}px`);
+      portrait.style.setProperty("--reveal-radius-y", `${targetRy}px`);
+      animId = null;
+    }
+  };
+
+  portrait.addEventListener("pointermove", (e) => {
+    const rect = portrait.getBoundingClientRect();
+    targetX = ((e.clientX - rect.left) / rect.width) * 100;
+    targetY = ((e.clientY - rect.top) / rect.height) * 100;
+
+    targetRx = 380 + Math.sin(e.clientX * 0.04) * 60;
+    targetRy = 320 + Math.cos(e.clientY * 0.04) * 60;
+
+    if (!animId) {
+      animId = requestAnimationFrame(render);
+    }
+  });
+
+  portrait.addEventListener("pointerleave", () => {
+    targetRx = 0;
+    targetRy = 0;
+    if (!animId) {
+      animId = requestAnimationFrame(render);
+    }
+  });
+})();
